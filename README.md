@@ -7,8 +7,6 @@ Software de microcontrolador para la fabricación automática de pizza.
 #### Parte I. 
 El siguiente, es un modelo de clases de una aplicación que se comunica con un microcontrolador encargado de la fabricación automática de pizzas. Dichas clases encapsulan la lógica para amasar, hornear y moldear pizzas de las pizzas delgadas.
 
-![alt text](img/Model.png "Logo Title Text 1")
-
 El programa principal del micro-controlador utiliza la siguiente función, la cual depende de las clases antes mostradas:
 
 ```Java
@@ -44,25 +42,11 @@ Dado que es posible que en el futuro salgan variantes adicionales de esta máqui
 
 1.	Teniendo esto en cuenta, y considerando el patrón de fábrica abstracta, plantee el modelo de clases que permitiría desacoplar la lógica de la fabricación de pizzas, de las diferentes manera como se pueden realizar las actividades de bajo nivel relacionadas (cocción, corte, etc.).
 
-2.	Descargue el proyecto mediante el comando git (git clone) :
-```
-git clone https://github.com/CesarAVegaF312/DYAS-GoF-Patterns-Creational-PizzaFactory.git
-```
-	y ábralo en el IDE NetBeans.
-
-3.	Revise el funcionamiento actual de la aplicación. Como este es un proyecto Maven, ejecútelo a través de la línea de comando (desde el directorio del proyecto):
-
-```
-mvn clean install
-mvn exec:java -Dexec.mainClass="edu.unisabana.pizzafactory.consoleview.PreparadorPizza"
-```
 
 4.	Implemente el modelo propuesto. Para compilar después de haber hecho cambios, hágalo a través de Maven con: 
 
-```
-mvn compile
-```
 
-Nota: Si lo desea, puede revisar una [implementación de referencia del patrón Fábrica Abstracta](https://github.com/CesarAVegaF312/DYAS-GoF-FactoryMethod-ReferenceExample.git ), cuyo modelo corresponde al del siguiente diagrama ![](BasicExample.png)
+Nota: Diagrama UML [📄 Ver PizzaFactory.pdf](PizzaFactory.pdf)
+
 
 
